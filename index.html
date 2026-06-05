@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Acessar</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#0f0f0f;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    text-align:center;
+}
+
+.titulo{
+    color:#fff;
+    font-size:32px;
+    font-weight:bold;
+    margin-bottom:25px;
+    letter-spacing:1px;
+}
+
+.botao{
+    padding:20px 45px;
+    font-size:24px;
+    border:none;
+    border-radius:14px;
+    background:#25D366;
+    color:#fff;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+    animation:pulse 1.5s infinite;
+    box-shadow:0 0 20px rgba(37,211,102,0.5);
+}
+
+.botao:hover{
+    transform:scale(1.05);
+    background:#1ebe5d;
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.06);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="titulo">
+        GRUPO OFICIAL TELEGRAM
+    </div>
+
+    <button class="botao" onclick="redirecionar()">
+        🔥 ACESSAR AGORA
+    </button>
+</div>
+
+<script>
+function redirecionar(){
+    window.location.href = "https://t.me/momentodaphtaria_bot";
+}
+</script>
+
+</body>
+</html>
